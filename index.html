@@ -9,16 +9,23 @@
 </head>
 <body>
     <main>
-        <h1>Login Page</h1>
+        <h1>Registration Page</h1>
         <div class="inputs">
-            <input type="text" name="fullName" placeholder="Enter your full name">
-            <input type="text" name="username" placeholder="Enter your Username">
-            <input type="password" name="password" placeholder="Enter your password">
+            <input id="fullname" type="text" name="fullName" placeholder="Enter your full name">
+            <input id="email" type="email" name="emailid" placeholder="Enter your Email Id">
+            <input id="username" type="text" name="username" placeholder="Enter your Username">
+            <input id="password" type="password" name="password" placeholder="Enter your password">
         </div>
         <div class="buttons">
-            <button>Login</button>
-            <button>Signup</button>
+            <button onclick="register()" class="signup">Signup</button>
+            <button class="login"><a href="login.html" target="_blank">login</a></button>
         </div>
-    </main>
+    </main>   
 </body>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="index.js"></script>
 </html>

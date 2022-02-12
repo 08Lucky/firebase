@@ -27,5 +27,17 @@ h1{
 }
 .buttons button{
     width: 10%;
-    height: 30px;
+    height: 50px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.signup{
+    background-color: rgb(57, 134, 57);
+}
+.login{
+    background-color: rgb(219, 90, 90);
+}
+.submit{
+    background-color: aqua;
 }
