@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 20px 20px;
+}
+.inputs input{
+    width: 50%;
+    height: 50px;
+    border: 2px solid grey;
+    padding: 20px 20px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+.buttons button{
+    width: 10%;
+    height: 30px;
+}
