@@ -17,6 +17,16 @@ const database = firebase.database();
 
 //function
 
+function logout(){
+    auth
+      .signOut().then(function () {
+        // after successfully logged out redirect to Home page
+        window.location.href = "./login.html";
+        alert("User Signed Out successfully !");
+      })
+      .catch((error) => console.log(error)); 
+}
+
 function sign(){
     email = document.getElementById("email").value
     password = document.getElementById("password").value 
@@ -25,11 +35,13 @@ function sign(){
     if(validateEmail(email)==false || validatePassword(password)==false){
         alert("enter a valid email id or password")
         //we are using this return to stop the execution
-        return
+        return;
     }
 
     auth.signInWithEmailAndPassword(email, password)
     .then(function(){
+        //for redirecting it to the required page
+        window .location.href = "./homepage.html";
         alert("login successful")
     })
 
